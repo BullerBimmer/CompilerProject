@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+compiler.egg-info/PKG-INFO
+compiler.egg-info/SOURCES.txt
+compiler.egg-info/dependency_links.txt
+compiler.egg-info/requires.txt
+compiler.egg-info/top_level.txt
+test/test_lexer.py
+test/test_parser.py
