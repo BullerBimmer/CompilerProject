@@ -10,6 +10,8 @@ MINUS = "MINUS"
 MUL = "MUL"
 DIV = "DIV"
 LPAREN = "LPAREN"
+RPAREN = "RPAREN"
+
 class Lexer:
     def __init__(self, source_code):
         self.source_code = source_code
@@ -35,7 +37,13 @@ class Lexer:
                 tokens.append(["DIV", item])
             elif item in ["="]:
                 tokens.append(["NAME", item])
+            elif item in ["("]:
+                tokens.append(["LPAREN", item])
+            elif item in [")"]:
+                tokens.append(["RPAREN", item])
+            
             else:
                 raise ValueError(f"{item} is not a valid token.")
+
 
         return tokens

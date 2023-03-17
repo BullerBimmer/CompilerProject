@@ -6,5 +6,6 @@ compiler.egg-info/SOURCES.txt
 compiler.egg-info/dependency_links.txt
 compiler.egg-info/requires.txt
 compiler.egg-info/top_level.txt
+test/test_ast.py
 test/test_lexer.py
 test/test_parser.py

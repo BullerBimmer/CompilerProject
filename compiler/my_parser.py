@@ -1,5 +1,5 @@
-import compiler.lexer
-from compiler.lexer import NAME, EQ, NUMBER, PRINT, VARIABLE, PLUS, MINUS, MUL, DIV, LPAREN
+from compiler.my_lexer import NAME, EQ, NUMBER, PRINT, VARIABLE, PLUS, MINUS, MUL, DIV, LPAREN
+from compiler.my_lexer import Lexer
 
 class Parser:
     def __init__(self, tokens):
@@ -75,5 +75,3 @@ class Parser:
             return ("NAME", token[1])
         else:
             raise Exception("Invalid factor")
-
-

@@ -1,6 +1,6 @@
 import unittest
-from compiler.lexer import Lexer
-from compiler.parser import Parser
+from compiler.my_lexer import Lexer
+from compiler.my_parser import Parser
 
 class TestParser(unittest.TestCase):
     def test_assignment(self):        
